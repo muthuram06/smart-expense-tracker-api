@@ -64,5 +64,4 @@ public class ExpenseRepository {
                         expense.getCategory().equalsIgnoreCase(category))
                 .toList();
     }
-
 }
