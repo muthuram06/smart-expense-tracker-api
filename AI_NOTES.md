@@ -1,56 +1,55 @@
 # AI Usage Notes
 
-## AI Tools Used
+## AI Assistance
 
-ChatGPT was used during development to:
+AI tools (ChatGPT) were used as a development assistant for selected tasks during implementation, including:
 
-- Generate the initial Spring Boot project structure.
-- Create DTO classes.
-- Generate Repository, Service, and Controller boilerplate.
-- Suggest validation annotations.
-- Help debug Maven and Java version issues.
-- Provide REST API examples for Postman testing.
-
----
-
-## Verification Performed
-
-Every generated code snippet was manually reviewed before integration.
-
-The following were verified manually:
-
-- Project compiles successfully.
-- All endpoints return expected responses.
-- Repository correctly stores data in expenses.json.
-- Validation works for required fields.
-- Summary calculation is accurate.
-- Category filtering works.
-- Delete endpoint removes the correct expense.
+- Clarifying Spring Boot concepts and project structure.
+- Assisting with DTO and service layer implementation.
+- Suggesting improvements for repository and controller methods.
+- Helping troubleshoot Maven build issues and Java version configuration.
+- Providing example API requests for Postman testing.
+- Reviewing code and suggesting refactoring where appropriate.
 
 ---
 
-## Modifications Made
+## Verification and Implementation
 
-Several AI-generated snippets were modified during implementation.
+All code was reviewed, integrated, and tested manually.
 
-Examples include:
+The following were completed and verified during development:
 
-- Fixed constructor injection.
-- Corrected package structure.
-- Improved JSON storage logic.
-- Adjusted repository methods.
-- Fixed Service layer implementation.
-- Corrected Controller mappings.
+- Implemented the application architecture.
+- Fixed compilation and dependency issues.
+- Verified all REST API endpoints using Postman.
+- Confirmed JSON data is stored and retrieved correctly.
+- Verified expense summary calculations.
+- Tested category filtering functionality.
+- Verified delete functionality.
+- Successfully built the project using Maven (`mvn clean install`).
+
+---
+
+## Manual Changes
+
+During development, several AI suggestions were modified or adapted to fit the project requirements, including:
+
+- Adjusted repository implementation for JSON file storage.
+- Refined service layer business logic.
+- Corrected controller request mappings.
+- Fixed constructor injection and project structure.
+- Improved error handling and validation.
+- Adapted generated examples to match the assignment requirements.
 
 ---
 
 ## AI Suggestions Not Used
 
-Some AI suggestions were intentionally not implemented:
+The following suggestions were intentionally not implemented because they were outside the scope of the assignment:
 
-- Database integration using MySQL/PostgreSQL.
-- JPA Repository implementation.
-- Lombok annotations.
-- Swagger/OpenAPI documentation.
+- Database integration (MySQL/PostgreSQL)
+- Spring Data JPA Repository
+- Lombok annotations
+- Swagger/OpenAPI documentation
 
-The assignment required lightweight JSON file storage, so these suggestions were not applicable.
+The assignment specifically required a lightweight JSON file-based storage approach, so these features were not included.
